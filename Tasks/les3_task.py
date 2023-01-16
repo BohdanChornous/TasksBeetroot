@@ -47,13 +47,13 @@ print(True)
 
 month = int(input("Введыть мысяць народження: "))
 
-if month == 1 or 2 or 12:
+if month == 1 or month == 2 or month == 12:
     print("Ви народилися взимку")
-elif month == 3 or 4 or 5:
+elif month == 3 or month == 4 or month == 5:
     print("Ви народилися восени")
-elif month == 6 or 7 or 8:
+elif month == 6 or month == 7 or month == 8:
     print("Ви народилися влітку")
-elif month == 9 or 10 or 11:
+elif month == 9 or month == 10 or month == 11:
     print("Ви народилися осінню")
 else:
     print("Такого місяця ще не вигадали")
