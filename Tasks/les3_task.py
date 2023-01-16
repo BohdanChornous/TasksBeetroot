@@ -45,7 +45,7 @@ print(True)
 
 # Task form classroom
 
-month = int(input("Введыть мысяць народження: "))
+month = int(input("Введіть місяць народження: "))
 
 if month == 1 or month == 2 or month == 12:
     print("Ви народилися взимку")
