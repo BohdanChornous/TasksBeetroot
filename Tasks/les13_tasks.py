@@ -1,7 +1,13 @@
 # Task 1
 
-def my_func(func) -> int:
-    return len(func.__defaults__)
+def detect_local_variables():
+    a = 1
+    b = 2
+    c = 3
+    print("Number of local variables:", len(locals()))
+
+
+detect_local_variables()
 
 # Task 2
 
