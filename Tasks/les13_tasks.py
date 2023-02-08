@@ -1,7 +1,7 @@
 # Task 1
 
 def my_func(func) -> int:
-    return len(func.defaults__)
+    return len(func.__defaults__)
 
 # Task 2
 
