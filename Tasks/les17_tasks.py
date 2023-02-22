@@ -2,6 +2,7 @@ import math
 
 # Task 1
 
+
 class Animals:
 
     def __init__(self, name):
@@ -41,9 +42,9 @@ class Library:
         self.books = books
         self.authors = authors
         self.dict_books = {}
-        for a, b in zip(self.authors, self.books):
-            name_book, year_book = repr(b).split(": ")
-            self.dict_books.setdefault((a, int(year_book)), []).append(name_book)
+        for aut, bok in zip(self.authors, self.books):
+            name_book, year_book = repr(bok).split(": ")
+            self.dict_books.setdefault((aut, int(year_book)), []).append(name_book)
 
     def new_book(self, name_new_book: str, year_new_book: int, author_new_book):
         self.dict_books.setdefault((author_new_book, int(year_new_book)), []).append(name_new_book)
