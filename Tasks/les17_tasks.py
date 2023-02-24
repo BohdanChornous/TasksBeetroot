@@ -171,6 +171,14 @@ class Fraction:
             return Fraction(-(na * db) // gcd, -(da * nb) // gcd)
         return Fraction((na * db) // gcd, (da * nb) // gcd)
 
+    def __eq__(self, other):
+        na, da = self.numerator, self.denominator
+        nb, db = other.numerator, other.denominator
+        if na == nb and da == db:
+            return True
+        else:
+            return False
+
     def __str__(self):
         return f"{self.numerator} / {self.denominator}"
 
@@ -181,3 +189,4 @@ print(Fraction(1, 4) + Fraction(2, 7))
 print(Fraction(1, 4) - Fraction(2, 7))
 print(Fraction(1, 4) * Fraction(2, 7))
 print(Fraction(1, 4) / Fraction(2, 7))
+print(Fraction(1, 4) / Fraction(2, 7) == Fraction(7, 80))
