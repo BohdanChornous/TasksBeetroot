@@ -4,7 +4,10 @@ import functools
 # Task 1
 
 
-class ValidEmail:
+class ValidData:
+
+    def __init__(self, email: str):
+        self._email = self.validate(email)
 
     @staticmethod
     def validate(email):
@@ -14,19 +17,13 @@ class ValidEmail:
         else:
             return False
 
-
-class ValidData:
-
-    def __init__(self, email: str):
-        self._email = ValidEmail.validate(email)
-
     @property
     def mail(self):
         return self._email
 
     @mail.setter
     def mail(self, email):
-        self._email = ValidEmail.validate(email)
+        self._email = self.validate(email)
 
 
 mail = ValidData('ab.c@mail.com')
