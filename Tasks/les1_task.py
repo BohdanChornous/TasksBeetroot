@@ -1,7 +1,7 @@
 # task 2
-print("Hello", 'Bohdan', sep=' this is separator ', end=" this is end of this line") #her I used sep and end args of function print
+print("Hello", 'Bohdan', sep=' this is separator ', end=" this is end of this line") # her I used sep and end args of function print
 
-#task 3
+# task 3
 
 # letter o
 print('\n')

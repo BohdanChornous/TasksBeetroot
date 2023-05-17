@@ -72,4 +72,3 @@ def arg_rules(type_: type, max_length: int, contains: list):
 @arg_rules(type_=str, max_length=15, contains=['05', '@'])
 def create_slogan(name: str) -> str:
     return f"{name} drinks pepsi in his brand new BMW!"
-

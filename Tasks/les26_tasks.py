@@ -124,7 +124,7 @@ class HashTable:
             # Not found
             return None
         else:
-            # Found - return the data value
+            # Found - return the date value
             return node.value
 
     def remove(self, key):
@@ -167,7 +167,7 @@ class HashTable:
             # Not found
             return False
         else:
-            # Found - return the data value
+            # Found - return the date value
             return True
 
 

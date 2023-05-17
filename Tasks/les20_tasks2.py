@@ -18,5 +18,3 @@ class TestMyContext(unittest.TestCase):
             fo.read()
         enter = self.context.get_count()
         self.assertEqual(enter, 2)
-
-

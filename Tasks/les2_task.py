@@ -1,17 +1,17 @@
-#Task 1
+# Task 1
 
 name = 'Kenobi'
 day = 'saturday 14.01.2023'.title()
 
 print(f"Good day {name}! {day} is a perfect day to learn some python.")
 
-#Task 2
+# Task 2
 
 surname = 'General'
 greeting = 'Hello there! ' + surname + ' ' + name + '!!'
 print(greeting)
 
-#Task 3
+# Task 3
 
 a = 69
 b = 420

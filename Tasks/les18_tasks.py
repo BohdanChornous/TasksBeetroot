@@ -48,6 +48,10 @@ class Boss:
     def workers(self):
         return self._workers
 
+    @workers.setter
+    def workers(self, worker):
+        self.add_worker(worker)
+
     def add_worker(self, worker):
         if isinstance(worker, Worker):
             self._workers.append(worker)

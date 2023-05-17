@@ -21,4 +21,3 @@ class MyContext:
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.open_file.close()
         print(f"Number of contexts is {self.counter}")
-
